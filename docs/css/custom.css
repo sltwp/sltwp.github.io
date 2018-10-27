@@ -1,0 +1,562 @@
+body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: #39546C;}
+  /*background-color: #1E555C; }*/
+
+html {
+  width: 100%;
+  height: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  margin: 0 0 35px;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 25px; }
+  @media (min-width: 768px) {
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 0 0 35px; } }
+
+a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #42DCA3; }
+  a:focus, a:hover {
+    text-decoration: none;
+    color: #42DCA3; }
+
+#mainNav {
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #005A87; }
+  #mainNav .navbar-toggler {
+    font-size: 14px;
+    padding: 11px;
+    color: white;
+    border: 1px solid white; }
+  #mainNav .navbar-brand {
+    font-weight: 700; }
+  #mainNav a {
+    color: #fafafa; }
+  #mainNav .navbar-nav .nav-item {
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out; }
+    #mainNav .navbar-nav .nav-item:hover {
+      color: #42DCA3;
+      outline: none;
+      background-color: transparent; 
+      opacity: 0.8;}
+    #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+      outline: none;
+      background-color: transparent; }
+      
+  @media (min-width: 992px) {
+    #mainNav {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+      -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+      transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+      letter-spacing: 1px;
+      border-bottom: none;
+      background: transparent; }
+      #mainNav.navbar-shrink {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        background-color: #005A87;
+      }
+      #mainlogo.mainlogo-shrink {
+       -webkit-transition: width 0.2s ease-in, heigth 0.2s ease-in;
+       -moz-transition: width 0.2s ease-in, heigth 0.2s ease-in;
+        width: 70px;
+        height: 70px;
+      }
+      #mainNav .nav-link.active {
+        outline: none;
+        background-color: black; }
+        #mainNav .nav-link.active:hover {
+          color: white; } }
+
+
+
+.masthead {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+  background: url("../img/argusmain.jpg") no-repeat bottom center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .masthead .intro-body {
+    display: table-cell;
+    vertical-align: middle; }
+    .masthead .intro-body .brand-heading {
+      font-size: 40px; }
+    .masthead .intro-body .intro-text {
+      font-size: 18px; }
+  @media (min-width: 768px) {
+    .masthead {
+      height: 100%;
+      padding: 0; }
+      .masthead .intro-body .brand-heading {
+        font-size: 50px;
+        opacity: 0.8; }
+      .masthead .intro-body .intro-text {
+        font-size: 22px; } }
+
+
+/*@media(min-width: 768px) {
+  .masthead{
+    height: auto;
+    padding: 200px 0;
+  }
+}*/
+
+#mainlogo{
+  width: 50px;
+  height: 50px;
+}
+
+@media (min-width: 768px) {
+ #mainlogo {
+   width: 80px;
+   height: 80px;
+ }
+}
+
+@media (min-width: 992px){
+#mainlogo {
+  -webkit-transition: width 0.2s ease-in, heigth 0.2s ease-in;
+  -moz-transition: width 0.2s ease-in, heigth 0.2s ease-in;
+  width: 150px;
+  height: 150px;
+} }
+
+.mainlogo:hover{
+  opacity: 0.75;
+}
+.btn-circle {
+  font-size: 26px;
+  width: 55px;
+  height: 55px;
+  margin-top: 15px;
+  line-height: 38px;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  color: white;
+  border: 2px solid white;
+  border-radius: 100% !important;
+  background: transparent; }
+  .btn-circle:focus, .btn-circle:hover {
+    color: white;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1); }
+
+.content-section {
+  padding-top: 75px;
+  padding-bottom: 75px; }
+
+.contact-section {
+  color: white;
+  background: url("../img/bfaartwork.jpg") no-repeat center bottom scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+#map {
+  width: 100%;
+  height: 300px; }
+
+@media (min-width: 992px) {
+  .content-section {
+    padding-top: 75px;
+    padding-bottom: 75px; }
+  #map {
+    height: 350px; } }
+
+.btn {
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  border-radius: 0; }
+
+.btn-default {
+  color: #42DCA3;
+  border: 1px solid #42DCA3;
+  background-color: transparent; }
+  .btn-default:focus, .btn-default:hover {
+    color: black;
+    border: 1px solid #42DCA3;
+    outline: none;
+    background-color: #42DCA3; }
+
+ul.banner-social-buttons {
+  margin-top: 0; }
+  @media (max-width: 1199px) {
+    ul.banner-social-buttons {
+      margin-top: 15px; } }
+  @media (max-width: 767px) {
+    ul.banner-social-buttons li {
+      display: block;
+      margin-bottom: 20px;
+      padding: 0; }
+      ul.banner-social-buttons li:last-child {
+        margin-bottom: 0; } }
+
+footer {
+  position: relative;
+  padding: 35px 0; }
+  footer p {
+    font-size: 14px;
+    margin: 0; }
+
+::-moz-selection {
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, 0.2);
+  text-shadow: none; }
+
+::selection {
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, 0.2);
+  text-shadow: none; }
+
+img::selection {
+  background: transparent; }
+
+img::-moz-selection {
+  background: transparent; }
+
+body {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2); }
+
+.join {
+  font-size: 1.5rem;
+  color:#0288D1;
+  border: 1px solid #0288D1;
+}
+
+.join:hover, .join:focus{
+  color: black;
+  border: 1px solid #0288D1;
+  outline: none;
+  background-color: #0288D1;
+  transition: 0.3s ease-in;
+  transform: scale(1.03);
+}
+
+
+.wlogs {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.about-section {
+  background-color: #096191;
+}
+
+.no-padding {
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
+#roster {
+  /*border-bottom: 1px solid rgba(255, 255, 255, 0.3);*/
+}
+
+.tos {
+  border-radius: 15px;
+  width: 300px;
+}
+
+@media (min-width: 768px) {
+  .tos {
+  width: 400px;
+  }
+}
+
+@media (min-width: 992px) {
+  .tos {
+  width: auto;
+  height: 250px;
+  }
+}
+
+.no-margin {
+  margin-bottom: 5px;
+}
+
+.footer {
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #006293;
+}
+
+.spec-icon {
+  filter: grayscale(1);
+  opacity: 0.7;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: 3px solid #00796B;
+}
+
+.spec-icon:hover {
+  filter: grayscale(0.75);
+}
+
+.role {
+}
+.active, .active:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+.classname {
+  font-weight: bold;
+  padding-top: 2px;
+  text-shadow: 1px 2px black;
+}
+
+#recruitment {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.text-right {
+  display: block;
+  margin-bottom: 4px;
+  text-align: right;
+}
+
+.wclass {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #00796B;
+  margin-bottom: 9px;
+  white-space: nowrap;
+}
+
+.noborder {
+  border: none;
+}
+
+.player {
+  background-color: #00838f;
+  border: 1px solid black;
+  display: inline-block;
+  width: 80%;
+  margin: 5px;
+  padding: 10px;
+  text-align: left;
+  padding-right: 0;
+  padding-top: 0;
+}
+
+.infobox{
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  padding: 0;
+  justify-content: right;
+  width: 126px;
+  height: 50px;
+}
+
+.links {
+display: inline-block;
+width: 100px;
+margin: 0;
+padding-top: 3px;
+}
+
+.wlogssmall{
+	width: 35px;
+	height: 35px;
+}
+
+.player-image {
+  width: 64px;
+  height: 64px;
+  border-radius: 20%;
+  border: 2px solid black;
+  margin-top: 10px;
+}
+
+.player:hover{
+  transition: 0.15s ease-out;
+  transform: scale(1.15);
+}
+
+.player-spec-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 30%;
+  border: 2px solid black;  
+}
+
+.name {
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-shadow: 1px 1px black;
+}
+
+.role {
+  vertical-align: middle;
+  float: right;
+  padding-top: 1px;
+}
+
+.guild-rank {
+  font-size: 0.85rem;
+}
+
+.scroll-button {
+  margin-top: 105%;
+}
+
+.web-title{
+  display: none;
+}
+
+@media (min-width: 768px){
+  .web-title {
+      display: initial;
+   }
+} 
+
+.recruit-disclaimer {
+  padding-top: 25px;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.discord {
+    overflow: hidden;
+    width: 108px;
+    height: 108px;
+    transition-duration: 1s;
+    transition-property: transform; 
+}
+
+.discord:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.madeby {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  font-size: 0.65rem;
+  font-style: italic;
+  width: 99.8%;
+  padding-top: 20px;
+}
+
+/* Roster Width - 420px */
+@media(min-width: 350px) {
+.infobox{
+  width: 165px;
+}	
+}
+@media(min-width: 500px){
+.infobox{
+  width: 280px;
+}
+}
+/* Roster Width - 768px  */
+@media(min-width: 768px){
+.infobox{
+	width: 320px;
+}
+}
+/* Roster Width - 992px */
+@media (min-width: 992px){
+.infobox{
+	width: 100px;
+}
+.name{
+	font-size: 1rem;
+}
+.links{
+	width: auto;
+}
+}
+
+/* Roster Width - 1200px */
+@media (min-width: 1200px){
+
+.player {
+  background-color: #00838f;
+  border: 1px solid black;
+  display: inline-block;
+  width: 100%;
+  margin: 5px;
+  padding: 10px;
+  text-align: left;
+  padding-right: 0;
+  padding-top: 0;
+}
+
+.infobox{
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  padding: 0;
+  justify-content: right;
+  width: 196px;
+  height: 50px;
+}
+.name{
+	font-size: 1.25rem;
+}
+}
+
+.lightblue {
+  color: #ADD8E6;
+}
+
+.deathknight{color: #C41F3B;}
+.demonhunter{color: #A330C9;}
+.druid{color: #FF7D0A;}
+.hunter{color: #ABD473;}
+.mage{color: #69CCF0;}
+.monk{color: #00FF96;}
+.paladin{color: #F58CBA;}
+.priest{color: #FFFFFF;}
+.rogue{color: #FFF569;}
+.shaman{color: #0070DE;}
+.warlock{color: #9482C9;}
+.warrior{color: #C79C6E;}
