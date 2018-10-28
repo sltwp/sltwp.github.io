@@ -333,7 +333,7 @@ body {
 }
 
 .spec-icon:hover {
-  filter: grayscale(0.75);
+  filter: grayscale(0.8);
 }
 
 .role {
@@ -422,7 +422,7 @@ padding-top: 3px;
   width: 40px;
   height: 40px;
   border-radius: 30%;
-  border: 2px solid black;  
+  border: 1px solid black;  
 }
 
 .name {
@@ -485,33 +485,52 @@ padding-top: 3px;
   padding-top: 20px;
 }
 
-/* Roster Width - 420px */
+/* Roster Width - 350px */
 @media(min-width: 350px) {
 .infobox{
-  width: 165px;
+  width: 261px;
 }	
 }
+/* Roster Width - 420px */
+@media(min-width: 420px) {
+  .infobox{
+    width: 261px;
+  }	
+  }
+/* Roster Width - 500px  */
 @media(min-width: 500px){
 .infobox{
-  width: 280px;
+  width: 363px;
+}
+.player {
+  width: 100%;
+  padding-bottom: 10px;
 }
 }
 /* Roster Width - 768px  */
 @media(min-width: 768px){
 .infobox{
-	width: 320px;
+	width: 479px;
+}
+.player {
+  width: 100%;
+  padding-bottom: 10px;
 }
 }
 /* Roster Width - 992px */
 @media (min-width: 992px){
 .infobox{
-	width: 100px;
+	width: 145px;
 }
 .name{
 	font-size: 1rem;
 }
 .links{
 	width: auto;
+}
+.player {
+  width: 100%;
+  padding-bottom: 4px;
 }
 }
 
