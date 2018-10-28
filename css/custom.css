@@ -488,13 +488,13 @@ padding-top: 3px;
 /* Roster Width - 350px */
 @media(min-width: 350px) {
 .infobox{
-  width: 261px;
+  width: 170px;
 }	
 }
 /* Roster Width - 420px */
 @media(min-width: 420px) {
   .infobox{
-    width: 261px;
+    width: 220px;
   }	
   }
 /* Roster Width - 500px  */
