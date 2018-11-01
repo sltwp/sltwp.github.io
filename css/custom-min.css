@@ -521,7 +521,7 @@ body {
     top:5%;
   }
   #bestpeople {
-    top: 42%;
+    top: 40%;
   }
   }
   /* Roster Width - 420px */
@@ -530,7 +530,7 @@ body {
       width: 220px;
     }	
     #bestpeople {
-      top: 52%;
+      top: 50%;
     }
     }
   /* Roster Width - 500px  */
@@ -559,7 +559,7 @@ body {
     padding-bottom: 10px;
   }
   #bestpeople {
-    top: 62%;
+    top: 60%;
   }
   }
   /* Roster Width - 992px */
