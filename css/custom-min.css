@@ -518,9 +518,11 @@ body {
     width: 170px;
   }	
   #end {
+    font-size: 34px;
     top:5%;
   }
   #bestpeople {
+    font-size:14px;
     top: 40%;
   }
   }
@@ -549,6 +551,7 @@ body {
   /* Roster Width - 768px  */
   @media(min-width: 768px){
     #end {
+      font-size: 40px;
       top:10%;
     }
   .infobox{
@@ -559,6 +562,7 @@ body {
     padding-bottom: 10px;
   }
   #bestpeople {
+    font-size: 16px;
     top: 60%;
   }
   }
