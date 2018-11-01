@@ -101,10 +101,13 @@ body {
   
   
   .masthead {
+    /** --- remove first 2 lines after this comment --- **/
+    /**position: relative;
+    height: 100%;*//
     display: table;
     width: 100%;
-    height: auto;
-    padding: 100px 0;
+    height: 100%;
+    /**padding: 100px 0;**/
     text-align: center;
     color: white;
     background: url("../img/argusmain.jpg") no-repeat bottom center scroll;
@@ -485,17 +488,50 @@ body {
     padding-top: 20px;
   }
   
+
+  #end {
+    font-family: 'Cabin', 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    position: relative;
+    top: 15%;
+    overflow: auto;
+    margin: auto;
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+  }
+
+  #bestpeople {
+    font-family: 'Cabin', 'Montserrat', 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    position: relative;
+    top: 65%;
+    overflow: auto;
+    margin: auto;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    padding-left: 2px;
+  }
+
   /* Roster Width - 350px */
   @media(min-width: 350px) {
   .infobox{
     width: 170px;
   }	
+  #end {
+    top:5%;
+  }
+  #bestpeople {
+    top: 42%;
+  }
   }
   /* Roster Width - 420px */
   @media(min-width: 420px) {
     .infobox{
       width: 220px;
     }	
+    #bestpeople {
+      top: 52%;
+    }
     }
   /* Roster Width - 500px  */
   @media(min-width: 500px){
@@ -506,15 +542,24 @@ body {
     width: 100%;
     padding-bottom: 10px;
   }
+  #bestpeople {
+    top: 60%;
+  }
   }
   /* Roster Width - 768px  */
   @media(min-width: 768px){
+    #end {
+      top:10%;
+    }
   .infobox{
       width: 479px;
   }
   .player {
     width: 100%;
     padding-bottom: 10px;
+  }
+  #bestpeople {
+    top: 62%;
   }
   }
   /* Roster Width - 992px */
