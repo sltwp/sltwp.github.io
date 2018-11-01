@@ -523,7 +523,7 @@ body {
   }
   #bestpeople {
     font-size:12px;
-    top: 30%;
+    top: 45%;
   }
   }
   /* Roster Width - 420px */
@@ -532,7 +532,7 @@ body {
       width: 220px;
     }	
     #bestpeople {
-      top: 50%;
+      top: 52%;
     }
     }
   /* Roster Width - 500px  */
