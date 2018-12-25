@@ -1,3 +1,1 @@
-# Contemplating Salad, a Silvermoon guild.
-
-website by slt.
+# Redesign-2018
