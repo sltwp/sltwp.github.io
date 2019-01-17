@@ -87,7 +87,6 @@ body {
           background-color: #005A87;
         }
         #mainlogo.mainlogo-shrink {
-          transition: width 0.2s ease-in, heigth 0.2s ease-in;
          -webkit-transition: width 0.2s ease-in, heigth 0.2s ease-in;
          -moz-transition: width 0.2s ease-in, heigth 0.2s ease-in;
           width: 70px;
@@ -104,7 +103,7 @@ body {
   .masthead {
     /** --- remove first 2 lines after this comment --- **/
     /**position: relative;
-    height: 100%;*/
+    height: 100%;*//
     display: table;
     width: 100%;
     height: 100%;
@@ -156,7 +155,6 @@ body {
   
   @media (min-width: 992px){
   #mainlogo {
-    transition: width 0.2s ease-in, heigth 0.2s ease-in;
     -webkit-transition: width 0.2s ease-in, heigth 0.2s ease-in;
     -moz-transition: width 0.2s ease-in, heigth 0.2s ease-in;
     width: 150px;
@@ -296,9 +294,9 @@ body {
     padding-bottom: 0;
   }
   
-  /*#roster {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  }*/
+  #roster {
+    /*border-bottom: 1px solid rgba(255, 255, 255, 0.3);*/
+  }
   
   .tos {
     border-radius: 15px;
@@ -341,8 +339,8 @@ body {
     filter: grayscale(0.8);
   }
   
-  /*.role {
-  }*/
+  .role {
+  }
   .active, .active:hover {
     filter: grayscale(0);
     opacity: 1;
