@@ -679,6 +679,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 2px 2px 0 0;
 }
 
+
+
 #about .about-col .icon {
   width: 64px;
   height: 64px;
@@ -732,6 +734,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #333;
   margin-bottom: 0;
   padding: 0 20px 20px 20px;
+}
+
+#about .about-col .size-fix {
+  margin-bottom: 32.1px;
 }
 
 /* Services Section
