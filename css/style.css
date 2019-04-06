@@ -1662,3 +1662,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .about-col:hover{
   transform: scale(1.1);
 }
+
+.madeBy {
+  font-size: 10px;
+}
