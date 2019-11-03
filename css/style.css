@@ -236,7 +236,8 @@ h6 {
 
 #intro h2 {
   color: #fff;
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
+  margin-bottom: 5px; /*delete after */
   font-size: 48px;
   font-weight: 700;
 }
@@ -1581,7 +1582,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (min-width: 1024px) {
   #header #logo {
-    padding-left: 60px;
+    padding-left: 70px;
   }
 
   #intro p {
