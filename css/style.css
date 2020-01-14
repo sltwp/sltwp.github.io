@@ -177,6 +177,11 @@ h6 {
   margin-right: 15px;;
 }
 
+.cs-logo {
+  width: 30px;
+  height: auto;
+}
+
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
@@ -1660,11 +1665,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 .contact-application::before {
   color: #000;
   height: 48px;
-}
-
-.cs-logo {
-  width: 30px;
-  height: auto;
 }
 
 .class-name {
