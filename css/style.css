@@ -923,6 +923,23 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.9s;
 }
 
+@media screen and (max-width: 768px) {
+  #skills .progress {
+    position: relative;
+  }
+
+  #skills .progress .skill {
+    position: absolute;
+    width: 100%;
+    color: #000;
+  }
+  
+  #skills .progress .skill .val {
+    float: right;
+    margin-right: 40px;
+  }
+}
+
 /* roster Section
 --------------------------------*/
 
