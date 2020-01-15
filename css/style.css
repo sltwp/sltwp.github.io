@@ -174,7 +174,7 @@ h6 {
 #header #logo img {
   padding: 0;
   margin: 0;
-  margin-right: 15px;;
+  margin-right: 15px;
 }
 
 .cs-logo {
@@ -761,10 +761,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 234px;
 }
 
-@media screen and {max-width: 900px;}
+@media screen and (max-width: 900px){
 #about .about-col .size-fix {
   width: max-content;
-}
+}}
 
 /* Services Section
 --------------------------------*/
