@@ -1,5 +1,5 @@
 const tinify = require("tinify");
-tinify.key = "75b5zNHlx5l6SvXw8xQ1yxfmTz8wgKpv";
+var tinify.key = config.tinify_key;
 
 /*Simon*/
 var source = tinify.fromUrl("https://render-eu.worldofwarcraft.com/character/silvermoon/15/171295503-main.jpg");
