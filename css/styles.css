@@ -5648,6 +5648,13 @@ textarea.form-control-lg {
   }
 }
 @media (min-width: 1200px) {
+  .portfolio-modal .modal-dialog {
+    max-width: 50vw !important;
+  }
+  .modal {
+    left: 25%;
+  }
+
   .modal-xl {
     max-width: 1140px;
   }
