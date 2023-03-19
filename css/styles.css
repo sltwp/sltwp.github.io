@@ -12318,10 +12318,3 @@ section#contact form#contactForm :-ms-input-placeholder {
 .float-right {
   float: right;
 }
-
-@media (min-width: 576px) {
-.text-responsive {
-  font-size: ;
-
-}
-}
