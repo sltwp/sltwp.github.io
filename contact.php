@@ -6,8 +6,8 @@ if ($_POST) {
     $visitor_phone = "";
     $visitor_message = "";
     $email_body = "<div>";
-    $email_title = "Nová zpráva z kontaktního formuláře";
-    $recipient = "simonsotak97@gmail.com";
+    $email_title = "Nová zpráva z kontaktního formuláře 3S Security";
+    $recipient = "obchod@3ssecurity.cz";
 
     if (isset($_POST['visitor_name'])) {
         $visitor_name = filter_var($_POST['visitor_name'], FILTER_SANITIZE_STRING);
@@ -23,7 +23,7 @@ if ($_POST) {
 </div>";
     }
 
-    if (isset($_POST['visitor_phonel'])) {
+    if (isset($_POST['visitor_phone'])) {
         $visitor_phone = filter_var($_POST['visitor_phone'], FILTER_SANITIZE_STRING);
         $email_body .= "<div> 
 <label><b>Tel. číslo:</b></label>&nbsp;<span>" . $visitor_phone . "</span> 
@@ -44,6 +44,7 @@ if ($_POST) {
         . 'From: ' . $visitor_email . "\r\n";
 
     if (mail($recipient, $email_title, $email_body, $headers)) {
+        header("Location: https://www.3ssecurity.cz/#contact");
         echo "<p>Děkujeme, $visitor_name, Vaše zpráva byla úspěšné odesláná.</p>";
     } else {
         echo '<p>Omlouváme se, něco se pokazilo.</p>';
