@@ -1,81 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>3S security</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="assets/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-        <!-- Google reCAPTCHA-->
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-        <script>
-          function onSubmit(token) {
-            document.getElementById("contactForm").submit();
-          }
-        </script>
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top">3S security <!--<img src="assets/img/navbar-logo.svg" alt="..." />--></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars ms-1"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#about">Kdo jsme</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Naše služby</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Reference</a></li>                        
-                        <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container">
-                <!--<div class="masthead-subheading">Welcome To Our Studio!</div>-->
-                <div class="masthead-heading text-uppercase">NEJSME DODAVATEL,</div>
-                <div class="masthead-heading text-uppercase">JSME VÁŠ PARTNER</div>
-                <!--<a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>-->
-            </div>
-        </header>
-        <!-- About-->
-        <section class="page-section" id="about">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Kdo jsme</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-                <div class="row">
-                <div class="col-md-6 justify-text"><p>Jsme ryze česká společnost, která Vám nabízí SLUŽBY INTEGROVANÉ BEZPEČNOSTI, dle ČSN  76 1702 Poskytovatelé bezpečnostních služeb – Fyzická ostraha, s důrazem na kvalitu a spokojenost klienta.</p>
-                    <p>Nechceme být vašim dodavatelem ale partnerem, na kterého se můžete vždy spolehnout.</p>
-                    <p>Rádi vám poskytneme náhradní plnění.</p>
-                    <p>Vedení společnosti má společný cíl – zabezpečit pro vás bezpečnost – ochranu před hrozbami a riziky, čím nebudou zapotřebí další finance k investování do systému – systém bude schopný odolávat vnějším a vnitřním hrozbám.</p>
-                    <p>Působíme v rámci celé České republiky, máme zkušenosti a praxi ze služby u Policie ČR, vězeňské služby na vrcholných pozicích, služby bezpečnosti pro Vás rádi zabezpečíme na Slovensku i v Polsku.</p>
-                </div>
-                <div class="col-md-6"><p class="branded-text align-center"><strong>3S  - SPOLEHLIVOST – SPOLUPRÁCE – SPOKOJENOST<br/>NEJSME DODAVATEL, JSME VÁŠ PARTNER.</strong></p>
-                    <p class="align-center">Na nás se můžete <span class="branded-text-blue">SPOLEHNOUT.</span></p>
-                    <p class="align-center">S námi to je o <span class="branded-text-blue">SPOLUPRÁCI.</span></p>
-                    <p class="align-center">A Vaši <span class="branded-text-blue">SPOKOJENOSTI.</span></p>
-                    <p class="align-center"><img src="/assets/img/bullseye.png" id="bullseye"></p>
-                </div>
-                </div>
-                </div>
-                </div>
-                <!--
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="3S Security" />
+    <title>3S security</title>
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.min.css" rel="stylesheet" />
+    <link href="assets/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google reCAPTCHA-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#page-top">
+          <img src="assets/img/logos/3s.svg" class="header-logo" alt="3S Security Logo" />
+          3S security
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars ms-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Kdo jsme</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Naše služby</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Reference</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+      <div class="container">
+        <div class="masthead-heading text-uppercase">NEJSME DODAVATEL,</div>
+        <div class="masthead-heading text-uppercase">JSME VÁŠ PARTNER</div>
+        <!--<a class="btn btn-primary btn-xl text-uppercase" href="#services">Scrolling button</a>-->
+      </div>
+    </header>
+    <!-- About-->
+    <section class="page-section" id="about">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Kdo jsme</h2>
+          <h3 class="section-subheading text-muted"></h3>
+        </div>
+        <div class="row">
+          <div class="col-md-6 justify-text">
+            <p>
+              Jsme ryze česká společnost, která Vám nabízí SLUŽBY INTEGROVANÉ BEZPEČNOSTI, dle ČSN 76 1702 Poskytovatelé bezpečnostních služeb –
+              Fyzická ostraha, s důrazem na kvalitu a spokojenost klienta.
+            </p>
+            <p>Nechceme být vašim dodavatelem ale partnerem, na kterého se můžete vždy spolehnout.</p>
+            <p>Rádi vám poskytneme náhradní plnění.</p>
+            <p>
+              Vedení společnosti má společný cíl – zabezpečit pro vás bezpečnost – ochranu před hrozbami a riziky, čím nebudou zapotřebí další finance
+              k investování do systému – systém bude schopný odolávat vnějším a vnitřním hrozbám.
+            </p>
+            <p>
+              Působíme v rámci celé České republiky, máme zkušenosti a praxi ze služby u Policie ČR, vězeňské služby na vrcholných pozicích, služby
+              bezpečnosti pro Vás rádi zabezpečíme na Slovensku i v Polsku.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <p class="branded-text align-center">
+              <strong>3S - SPOLEHLIVOST – SPOLUPRÁCE – SPOKOJENOST<br />NEJSME DODAVATEL, JSME VÁŠ PARTNER.</strong>
+            </p>
+            <p class="align-center">
+              Na nás se můžete
+              <span class="branded-text-blue">SPOLEHNOUT.</span>
+            </p>
+            <p class="align-center">S námi to je o <span class="branded-text-blue">SPOLUPRÁCI.</span></p>
+            <p class="align-center">A Vaši <span class="branded-text-blue">SPOKOJENOSTI.</span></p>
+            <p class="align-center">
+              <img src="/assets/img/bullseye.png" id="bullseye" />
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--
                 <ul class="timeline">
                     <li>
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
@@ -129,158 +163,171 @@
                         </div>
                     </li>
                 </ul>-->
+    </section>
+    <!-- Services-->
+    <section class="page-section bg-dark" id="services">
+      <div class="container white-text">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Naše služby</h2>
+          <h3 class="section-subheading text-muted">Poskytujeme služby integrované bezpečnosti</h3>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-3">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="bi bi-building-fill-lock services-icon"></i>
+            </span>
+            <h4 class="my-3">Bezpečnostní a recepční služby</h4>
+            <div class="text-muted">
+              <ul class="align-left">
+                <li>RECEPČNÍ SLUŽBY</li>
+                <li>FYZICKÁ OSTRAHA</li>
+                <li>DETEKTIVNÍ SLUŽBY</li>
+                <li>OCHRANA OSOB, VIP KLIENTŮ</li>
+                <li>ANALÝZA BEZPEČNOSTI VAŠI FIRMY</li>
+                <li>ZPRACOVÁNÍ BEZPEČNOSTNÍCH AUDITŮ</li>
+                <li>BEZPEČNOSTNÍ KONZULTACE, PORADENSTVÍ, HODNOCENÍ RIZIK</li>
+                <li>PŘEVOZ HOTOVOSTI A CENIN</li>
+              </ul>
+              <p>
+                <a class="portfolio-link branded-text" data-bs-toggle="modal" href="#portfolioModal1">Dozvědět se víc...</a>
+              </p>
             </div>
-        </section>
-        <!-- Services-->
-        <section class="page-section bg-dark" id="services">
-            <div class="container white-text">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Naše služby</h2>
-                    <h3 class="section-subheading text-muted">Poskytujeme služby integrované bezpečnosti</h3>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-3">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="bi bi-building-fill-lock services-icon"></i>
-                        </span>
-                        <h4 class="my-3">Bezpečnostní a recepční služby</h4>
-                        <div class="text-muted">
-                            <ul class="align-left">
-                                <li>RECEPČNÍ SLUŽBY</li>
-                                <li>FYZICKÁ OSTRAHA</li>
-                                <li>DETEKTIVNÍ SLUŽBY</li>
-                                <li>OCHRANA OSOB, VIP KLIENTŮ</li>
-                                <li>ANALÝZA BEZPEČNOSTI VAŠI FIRMY</li>
-                                <li>ZPRACOVÁNÍ BEZPEČNOSTNÍCH AUDITŮ</li>
-                                <li>BEZPEČNOSTNÍ KONZULTACE, PORADENSTVÍ, HODNOCENÍ RIZIK</li>
-                                <li>PŘEVOZ HOTOVOSTI A CENIN</li>                         
-                            </ul>
-                            <p><a class="portfolio-link branded-text-blue" data-bs-toggle="modal" href="#portfolioModal1">Dozvědět se víc...</a></p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="bi bi-camera2 services-icon"></i>
-                            <!--<i class="fas fa-laptop fa-stack-1x fa-inverse"></i>-->
-                        </span>
-                        <h4 class="my-3">Kamerové a zabezpečovací systémy</h4>
-                        <div class="text-muted">
-                            <ul class="align-left">
-                                <li>POPLACHOVÉ ZABEZPEČOVACÍ A TÍSŇOVÉ SYSTÉMY (PZTS)</li>
-                                <li>KAMEROVÉ SYSTÉMY (CCTV)</li>
-                                <li>ELEKTRONICKÁ POŽÁRNÍ SIGNALIZACE (EPS)</li>
-                                <li>PŘÍSTUPOVÉ A DOCHÁZKOVÉ SYSTÉMY (ACS)</li>
-                                <li>PARKOVACÍ SYSTÉMY (PS)</li>                       
-                            </ul>
-                            <p><a class="portfolio-link branded-text-blue" data-bs-toggle="modal" href="#portfolioModal2">Dozvědět se víc...</a></p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="bi bi-telephone-fill services-icon"></i>
-                        </span>
-                        <h4 class="my-3">Pult centrální ochrany, zásahová jednotka</h4>
-                        <div class="text-muted">
-                            <ul class="align-left">
-                                <li>MONITORING OBJEKTŮ</li>
-                                <li>MONITORING VOZIDEL</li>
-                                <li>VZDÁLENÝ KAMEROVÝ DOHLED</li>
-                                <li>ZÁSAHOVÁ JEDNOTKA</li>                     
-                            </ul>
-                            <p><a class="portfolio-link branded-text-blue" data-bs-toggle="modal" href="#portfolioModal3">Dozvědět se víc...</a></p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="bi bi-airplane-fill services-icon"></i>
-                        </span>
-                        <h4 class="my-3">Drony<br/>&NonBreakingSpace;</h4>
-                        <div class="text-muted">
-                            <ul class="align-left">
-                                <li>PODPORA STŘEŽENÍ ROZSÁHLÝCH OBJEKTŮ A PERIMETRŮ</li>
-                                <li>DOPLNĚK STACIONÁRNÍCH KAMEROVÝCH A RADAROVÝCH SYSTÉMU STŘEŽENÍ</li>
-                                <li>MONITORING VÝSKYTU A POHYBU OSOB A VOZIDEL</li>
-                                <li>POMOC PŘI ZÁCHRANNÍCH AKCÍCH</li>                
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="col-md-3">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="bi bi-camera2 services-icon"></i>
+              <!--<i class="fas fa-laptop fa-stack-1x fa-inverse"></i>-->
+            </span>
+            <h4 class="my-3">Kamerové a zabezpečovací systémy</h4>
+            <div class="text-muted">
+              <ul class="align-left">
+                <li>POPLACHOVÉ ZABEZPEČOVACÍ A TÍSŇOVÉ SYSTÉMY (PZTS)</li>
+                <li>KAMEROVÉ SYSTÉMY (CCTV)</li>
+                <li>ELEKTRONICKÁ POŽÁRNÍ SIGNALIZACE (EPS)</li>
+                <li>PŘÍSTUPOVÉ A DOCHÁZKOVÉ SYSTÉMY (ACS)</li>
+                <li>PARKOVACÍ SYSTÉMY (PS)</li>
+              </ul>
+              <p>
+                <a class="portfolio-link branded-text" data-bs-toggle="modal" href="#portfolioModal2">Dozvědět se víc...</a>
+              </p>
             </div>
-        </section>
-        <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">&nbsp;</h3>
+          </div>
+          <div class="col-md-3">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="bi bi-telephone-fill services-icon"></i>
+            </span>
+            <h4 class="my-3">Pult centrální ochrany, zásahová jednotka</h4>
+            <div class="text-muted">
+              <ul class="align-left">
+                <li>MONITORING OBJEKTŮ</li>
+                <li>MONITORING VOZIDEL</li>
+                <li>VZDÁLENÝ KAMEROVÝ DOHLED</li>
+                <li>ZÁSAHOVÁ JEDNOTKA</li>
+              </ul>
+              <p>
+                <a class="portfolio-link branded-text" data-bs-toggle="modal" href="#portfolioModal3">Dozvědět se víc...</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="bi bi-airplane-fill services-icon"></i>
+            </span>
+            <h4 class="my-3">Drony<br />&NonBreakingSpace;</h4>
+            <div class="text-muted">
+              <ul class="align-left">
+                <li>PODPORA STŘEŽENÍ ROZSÁHLÝCH OBJEKTŮ A PERIMETRŮ</li>
+                <li>DOPLNĚK STACIONÁRNÍCH KAMEROVÝCH A RADAROVÝCH SYSTÉMU STŘEŽENÍ</li>
+                <li>MONITORING VÝSKYTU A POHYBU OSOB A VOZIDEL</li>
+                <li>POMOC PŘI ZÁCHRANNÍCH AKCÍCH</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Grid-->
+    <section class="page-section bg-light" id="portfolio">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Portfolio</h2>
+          <h3 class="section-subheading text-muted">&nbsp;</h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-sm-6 mb-4">
+            <!-- Portfolio item 1-->
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-6 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/reception.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">BEZPEČNOSTNÍ A RECEPČNÍ SLUŽBY</div>
-                                <div class="portfolio-caption-subheading text-muted">&nbsp;</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-sm-6 mb-4">
-                        <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/camera.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">ZABEZPEČOVACÍ A KAMEROVÉ SYSTÉMY</div>
-                                <div class="portfolio-caption-subheading text-muted">&nbsp;</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-sm-6 mb-4">
-                        <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/dispatch.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">PULT CENTRÁLNÍ OCHRANY</div>
-                                <div class="portfolio-caption-subheading text-muted">PCO, ZÁSAHOVÁ JEDNOTKA</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-6 col-sm-6 mb-4 mb-lg-0">
-                        <!-- Portfolio item 4 -->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/officer.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">NÁHRADNÍ PLNĚNÍ – ( 25 / 1 ) </div>
-                                <div class="portfolio-caption-subheading text-muted">Co to je, výhody pro Vás</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--
+                <img class="img-fluid" src="assets/img/portfolio/reception.jpg" alt="..." />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">BEZPEČNOSTNÍ A RECEPČNÍ SLUŽBY</div>
+                <div class="portfolio-caption-subheading text-muted">&nbsp;</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6 mb-4">
+            <!-- Portfolio item 2-->
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="assets/img/portfolio/camera.jpg" alt="..." />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">ZABEZPEČOVACÍ A KAMEROVÉ SYSTÉMY</div>
+                <div class="portfolio-caption-subheading text-muted">&nbsp;</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6 mb-4">
+            <!-- Portfolio item 3-->
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="assets/img/portfolio/dispatch.jpg" alt="..." />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">PULT CENTRÁLNÍ OCHRANY</div>
+                <div class="portfolio-caption-subheading text-muted">PCO, ZÁSAHOVÁ JEDNOTKA</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-sm-6 mb-4 mb-lg-0">
+            <!-- Portfolio item 4 -->
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="assets/img/portfolio/officer.jpg" alt="..." />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">NÁHRADNÍ PLNĚNÍ – ( 25 / 1 )</div>
+                <div class="portfolio-caption-subheading text-muted">Co to je, výhody pro Vás</div>
+              </div>
+            </div>
+          </div>
+          <!--
                     <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
                         <-- Portfolio item 5
                         <div class="portfolio-item">
@@ -311,10 +358,10 @@
                             </div>
                         </div>
                     </div>-->
-                </div>
-            </div>
-        </section>
-        <!-- Team
+        </div>
+      </div>
+    </section>
+    <!-- Team
         <section class="page-section bg-light" id="team">
             <div class="container">
                 <div class="text-center">
@@ -358,7 +405,8 @@
                 </div>
             </div>
         </section>-->
-        <!-- References-->
+    <!-- References-->
+    <!--
         <section class="page-section bg-light" id="references">
         <div class="py-5">
             <div class="container">
@@ -368,246 +416,355 @@
                 </div>
                 <div class="row align-items-center">
                     <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo" /></a>
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/" alt="..." aria-label="Reference #1" /></a>
                     </div>
                     <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="..." aria-label="Google Logo" /></a>
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/" alt="..." aria-label="Reference #1" /></a>
                     </div>
                     <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg" alt="..." aria-label="Facebook Logo" /></a>
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/" alt="..." aria-label="Reference #1" /></a>
                     </div>
                     <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg" alt="..." aria-label="IBM Logo" /></a>
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/" alt="..." aria-label="Reference #1" /></a>
                     </div>
                 </div>
             </div>
         </div>
         </section>
-        <!-- Contact-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Kontaktujte nás</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                    <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <!-- Name input-->
-                                <input class="form-control" id="name" type="text" placeholder="Vaše jméno *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">Prosím, zadejte jméno.</div>
-                            </div>
-                            <div class="form-group">
-                                <!-- Email address input-->
-                                <input class="form-control" id="email" type="email" placeholder="Váš Email *" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">Prosím, zadejte email.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Prosím, zadejte email.</div>
-                            </div>
-                            <div class="form-group">
-                                <!-- Phone number input-->
-                                <input class="form-control" id="phone" type="tel" placeholder="Vaše tel. číslo *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">Prosím, zadejte tel. číslo.</div>
-                            </div>
-                            <div class="form-group form-group-textarea mb-md-0">
-                                <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Vaše zpráva *" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">Prosím, napíšte zprávu.</div>
-                            </div>
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Zprávu se nepovedlo odeslat</div></div>
-                            <!-- Submit Button-->
-                            <div><button class="btn btn-primary btn-xl text-uppercase disabled g-recaptcha" data-sitekey="6LetwXUkAAAAANr-iUx3C2_V_i5DL3phMSwCvYZ1" data-callback="onSubmit" id="submitButton" type="submit">Odeslat zprávu</button></div>
-                        </div>
-                        <div class="col-md-5"><address id="address-form">
-                            <h2 class="branded-text">3S security s.r.o</h2>
-                            <strong><p>IČO: 140 72 645</p>
-                            <p>Holušická 2253/1</p>
-                            <p>148 00 Praha 4 - Chodov</p>
-                            <p><a href= "mailto:obchod@3ssecurity.cz">obchod@3ssecurity.cz</a></p></strong>
-                            <iframe style="border:none" src="https://en.frame.mapy.cz/s/gelosofoge" width="500" height="333" frameborder="0"></iframe></address>
-                        </div>
-                    </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-8">
-                            <div class="fw-bolder">Form submission successful!</div>
-                            To activate this form, sign up at
-                            <br />
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                        </div>
-                    </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                </form>
+    -->
+    <!-- Contact-->
+    <section class="page-section" id="contact">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Kontaktujte nás</h2>
+          <h3 class="section-subheading text-muted"></h3>
+        </div>
+        <form id="contactForm" action="contact.php" method="post">
+          <div class="row align-items-stretch mb-5">
+            <div class="col-md-6 mb-5">
+              <div class="form-group">
+                <!-- Name input-->
+                <input class="form-control" id="name" type="text" name="visitor_name" placeholder="Vaše jméno *" required/>
+                <div class="invalid-feedback" data-sb-feedback="name:required">Prosím, zadejte jméno.</div>
+              </div>
+              <div class="form-group">
+                <!-- Email address input-->
+                <input class="form-control" id="email" type="email" name="visitor_email" placeholder="Váš Email *" required/>
+                <div class="invalid-feedback">Prosím, zadejte email.</div>
+                <div class="invalid-feedback">Prosím, zadejte email.</div>
+              </div>
+              <div class="form-group">
+                <!-- Phone number input-->
+                <input class="form-control" id="phone" type="tel" name="visitor_phone" placeholder="Vaše tel. číslo *" required/>
+                <div class="invalid-feedback">Prosím, zadejte tel. číslo.</div>
+              </div>
+              <div class="form-group form-group-textarea mb-md-0">
+                <!-- Message input-->
+                <textarea class="form-control" id="message" name="visitor_message" placeholder="Vaše zpráva *" required></textarea>
+                <div class="invalid-feedback">Prosím, napíšte zprávu.</div>
+              </div>
+              <div class="d-none" id="submitErrorMessage">
+                <div class="text-center text-danger mb-3">Zprávu se nepovedlo odeslat</div>
+              </div>
+              <!-- Submit Button class="btn btn-primary btn-xl text-uppercase disabled g-recaptcha"-->
+              <div>
+                <button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Odeslat zprávu</button>
+              </div>
             </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer py-4">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start"><strong>&copy; 2023, 3S security s.r.o</strong></div>
-                    <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <!--<div class="col-lg-4 text-lg-end">
+            <div class="col-md-6 justify-text">
+              <div class="address-form">
+                <address>
+                  <h2 class="branded-text underline">Sídlo společnosti</h2>
+                  <div style="margin-bottom: 3rem">
+                    <p>3S security s.r.o</p>
+                    <p>IČO: 140 72 645</p>
+                    <p>Holušická 2253/1</p>
+                    <p>148 00 Praha 4 - Chodov</p>
+                    <p>
+                      <a href="mailto:obchod@3ssecurity.cz">obchod@3ssecurity.cz</a>
+                    </p>
+                    <iframe style="border: none; max-width: 100%;" src="https://en.frame.mapy.cz/s/gelosofoge" width="500" height="333" frameborder="0"></iframe>
+                  </div>
+                </address>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="row align-items-stretch">
+          <div class="col-md-12">
+            <h2 class="branded-text underline" style="margin-bottom: 2rem; text-align: center;">Vedení společnosti</h2>
+          </div>
+          <div class="col-md-6 mb-5 address-form">
+            <div class="mb-5">
+              <p>Bc. David Špalt</p>
+              <p>Ředitel společnosti</p>
+              <p><a href="tel:+420774742421">+420 774 742 421</a></p>
+              <p><a href="mailto:david.spalt@3ssecurity.cz">david.spalt@3ssecurity.cz</a></p>
+            </div>
+            <div>
+              <p>Bc. Roman Pištěk, MBA</p>
+              <p>Generální ředitel</p>
+              <p><a href="tel:+420602653622">+420 602 653 622</a></p>
+              <p><a href="mailto:david.spalt@3ssecurity.cz">roman.pistek@3ssecurity.cz</a></p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-5 address-form">
+            <div class="mb-5">
+              <p>Obchodní oddělení</p>
+              <p><a href="tel:+420731926535">+420 731 926 535</a></p>
+              <p><a href="mailto:obchod@3ssecurity.cz">obchod@3ssecurity.cz</a></p>
+            </div>
+            <div>
+              <p>Provozní oddělení</p>
+              <p><a href="tel:+420602653622">+420 601 108 708</a></p>
+              <p><a href="mailto:provoz@3ssecurity.cz">provoz@3ssecurity.cz</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 text-lg-start">
+            <strong>&copy; 2023, 3S security s.r.o</strong>
+          </div>
+          <div class="col-lg-4 my-3 my-lg-0">
+            <img src="assets/img/logos/3s.svg" id="footer-logo" />
+            <!--
+            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            -->
+          </div>
+          <!--<div class="col-lg-4 text-lg-end">
                         <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
                         <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
                     </div>-->
-                </div>
-            </div>
-        </footer>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio item 1 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">BEZPEČNOSTNÍ A RECEPČNÍ SLUŽBY</h2>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/reception.jpg" alt="..." />
-                                    <p>Služby <strong>fyzické ostrahy</strong> poskytujeme našim klientům vždy po spolupráci s nimi, protože jenom oni vědí, jaké jsou jejich potřeby, firemní kultura, poslání a hodnoty, které vyznávají. Nejsme jenom dodavatel, my jsme partner.</p>
-                                    <p class="align-left"><strong>Fyzickou ostrahu zajistíme v:</strong></p>
-                                    <ul class="align-left">
-                                        <li>průmyslových, logistických nebo technologických areálech</li>
-                                        <li>bankovních a finančních institucí</li>
-                                        <li>státních úřadů, městských částí, ambasád</li>
-                                        <li>obchodních a administrativních centrech</li>
-                                        <li>objektů jiné infrastruktury (letiště, energetika, objekty zvláštního významu)</li>
-                                        <li>kulturních a historických objektů</li>
-                                    </ul>
-                                    <p><strong>Naše řešení bude pro Vás realizováno vždy na míru.</strong></p>
-                                    <p><strong>Recepční služby</strong> – rádi pro vás zabezpečíme na profesionální úrovni v rámci celé ČR. My víme, že recepční vás reprezentuje a je vstupní bránou do vašeho sídla, byznysu, kde je vyžadována informační služba pro klienta, návštěvníky. Recepční služba vychází vždy z požadavků zákazníka a může být vykonávána v civilním společenském oděvu nebo v uniformě společnosti s možností znalosti cizího jazyka.</p>
-                                    <p><strong>Detektivní služby</strong> jsou zaměřeny na plnění následujících úkolů:</p>
-                                    <ul>
-                                        <li>Prověrky obchodních a životních partnerů, zaměstnanců a uchazečů o zaměstnání</li>
-                                        <li>Získání informací pro soudní či správní řízení s užitím kriminalistických metod</li>
-                                        <li>Detektivní ochrana osob a objektů</li>
-                                        <li>Analýzy situací a stavů zabezpečení</li>
-                                        <li>Ochrana proti odposlechům</li>
-                                        <li>Informační servis o postavení firem a podniků</li>
-                                        <li>Jednání ve věcech platební kázně při splátkách ve prospěch zákazníka</li>                                        
-                                    </ul>
-                                    <p>Ke každému klientovi přistupujeme vždy individuálně a profesionálně. Jsme diskrétní a spolehliví, vždy společně s vámi navrhneme nejlepší řešení a postup k vyřešení případu, jsme váš partner a rádi to pro vás uděláme</p>
-                                    <p><strong>Bezpečnostní audit</strong> vám rádi bezplatně zpracujeme, má za úkol vyhodnotit stávající stav bezpečnosti na vašem objektu s ohledem na rizika, hrozby či vznik mimořádných událostí.</p>
-                                    <p>Hlavním přínosem bezpečnostního auditu je, že umožňuje identifikovat potenciální bezpečnostní problémy, což významně šetří jednak investice klienta, ale především může znamenat významnou úsporu při následném odstraňování následku hrozeb, nebo rizik, kdyby k nim reálně došlo.</p>
-                                    <p><strong>Přepravy hotovosti a cenin</strong> uskutečňujeme mezi subjekty, na základě objednávky klienta a zpravidla využíváme doprovodu ozbrojené fyzické ostrahy vybavené ochrannými prvky, bezpečnostní schránky a obaly.</p>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Zavřít
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-        <!-- Portfolio item 2 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">ZABEZPEČOVACÍ A KAMEROVÉ SYSTÉMY</h2>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/camera.jpg" alt="..." />
-                                    <p>Naše společnost nabízí dodávku a instalaci <strong>kamerových systémů (CCTV)</strong> pro ekonomické, středně náročné i vysoce náročné aplikace a také komplexní portfolio produktů pro systémy na bázi IP technologií</p>
-                                    <p><strong>Poplachové systémy (PZTS)</strong> - navrhneme vám a dodáme komplexní řešení elektronického zabezpečení objektů všech velikostí a kategorií, a to jak pro aplikace pouze s poplachovým systémem, tak i pro instalace, kde jsou vzájemně propojeny a integrovány všechny systémy, které dodáváme.</p>
-                                    <p>Nabízíme vám kompletní profesionální řešení <strong>elektronické požární signalizace (EPS)</strong> pro systémy detekce požáru, detekce úniku plynů, hasicí zařízení, domácí evakuační rozhlas a související doplňkový sortiment. Nabízíme variantní řešení, případně řešení na míru.</p>
-                                    <p><strong>Přístupové a docházkové systémy (ACS),</strong> nabízíme ucelené portfolio produktů špičkových světových výrobců pro komplexní realizaci systémů elektronické kontroly vstupu i docházkových systémů. </p>
-                                    <p><strong>Parkovací systém (PS),</strong> pro řízený příjezd a výjezd vozidel, zařízení pro navigaci uvnitř a vně parkoviště a monitorování obsazenosti parkovacích míst. Mimo základní funkce je možné rozšířit systém o platby ve speciálních režimech např. pro rezidenty a hotelové hosty. </p>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Zavřít
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      </div>
+    </footer>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio item 1 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img src="assets/img/close-icon.svg" alt="Close modal" />
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- Project details-->
+                  <h2 class="text-uppercase">BEZPEČNOSTNÍ A RECEPČNÍ SLUŽBY</h2>
+                  <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/reception.jpg" alt="..." />
+                  <p>
+                    Služby <strong>fyzické ostrahy</strong> poskytujeme našim klientům vždy po spolupráci s nimi, protože jenom oni vědí, jaké jsou
+                    jejich potřeby, firemní kultura, poslání a hodnoty, které vyznávají. Nejsme jenom dodavatel, my jsme partner.
+                  </p>
+                  <p class="align-left">
+                    <strong>Fyzickou ostrahu zajistíme v:</strong>
+                  </p>
+                  <ul class="align-left">
+                    <li>průmyslových, logistických nebo technologických areálech</li>
+                    <li>bankovních a finančních institucí</li>
+                    <li>státních úřadů, městských částí, ambasád</li>
+                    <li>obchodních a administrativních centrech</li>
+                    <li>objektů jiné infrastruktury (letiště, energetika, objekty zvláštního významu)</li>
+                    <li>kulturních a historických objektů</li>
+                  </ul>
+                  <p>
+                    <strong>Naše řešení bude pro Vás realizováno vždy na míru.</strong>
+                  </p>
+                  <p>
+                    <strong>Recepční služby</strong> – rádi pro vás zabezpečíme na profesionální úrovni v rámci celé ČR. My víme, že recepční vás
+                    reprezentuje a je vstupní bránou do vašeho sídla, byznysu, kde je vyžadována informační služba pro klienta, návštěvníky. Recepční
+                    služba vychází vždy z požadavků zákazníka a může být vykonávána v civilním společenském oděvu nebo v uniformě společnosti s
+                    možností znalosti cizího jazyka.
+                  </p>
+                  <p><strong>Detektivní služby</strong> jsou zaměřeny na plnění následujících úkolů:</p>
+                  <ul>
+                    <li>Prověrky obchodních a životních partnerů, zaměstnanců a uchazečů o zaměstnání</li>
+                    <li>Získání informací pro soudní či správní řízení s užitím kriminalistických metod</li>
+                    <li>Detektivní ochrana osob a objektů</li>
+                    <li>Analýzy situací a stavů zabezpečení</li>
+                    <li>Ochrana proti odposlechům</li>
+                    <li>Informační servis o postavení firem a podniků</li>
+                    <li>Jednání ve věcech platební kázně při splátkách ve prospěch zákazníka</li>
+                  </ul>
+                  <p>
+                    Ke každému klientovi přistupujeme vždy individuálně a profesionálně. Jsme diskrétní a spolehliví, vždy společně s vámi navrhneme
+                    nejlepší řešení a postup k vyřešení případu, jsme váš partner a rádi to pro vás uděláme
+                  </p>
+                  <p>
+                    <strong>Bezpečnostní audit</strong> vám rádi bezplatně zpracujeme, má za úkol vyhodnotit stávající stav bezpečnosti na vašem
+                    objektu s ohledem na rizika, hrozby či vznik mimořádných událostí.
+                  </p>
+                  <p>
+                    Hlavním přínosem bezpečnostního auditu je, že umožňuje identifikovat potenciální bezpečnostní problémy, což významně šetří jednak
+                    investice klienta, ale především může znamenat významnou úsporu při následném odstraňování následku hrozeb, nebo rizik, kdyby k
+                    nim reálně došlo.
+                  </p>
+                  <p>
+                    <strong>Přepravy hotovosti a cenin</strong> uskutečňujeme mezi subjekty, na základě objednávky klienta a zpravidla využíváme
+                    doprovodu ozbrojené fyzické ostrahy vybavené ochrannými prvky, bezpečnostní schránky a obaly.
+                  </p>
+                  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                    <i class="fas fa-xmark me-1"></i>
+                    Zavřít
+                  </button>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- Portfolio item 3 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">PULT CENTRÁLNÍ OCHRANY – PCO, ZÁSAHOVÁ JEDNOTKA</h2>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/dispatch.jpg" alt="..." />
-                                    <p>Pult centrální ochrany <strong>(PCO)</strong> je dohledové poplachové přijímací centrum <strong>(DPPC)</strong>, které máme zajištěno <strong>24 hodinovou službou</strong>, pro monitorování zabezpečovacích a jiných technologických systémů. Při poplachu <strong>vyšleme zásahové vozidlo</strong> a telefonicky vás informujeme. Následně provedeme další nezbytné kroky <strong>k zajištění bezpečnosti</strong> vašeho objektu.</p>
-                                    <p><strong>Poplachové systémy (PZTS)</strong> - navrhneme vám a dodáme komplexní řešení elektronického zabezpečení objektů všech velikostí a kategorií, a to jak pro aplikace pouze s poplachovým systémem, tak i pro instalace, kde jsou vzájemně propojeny a integrovány všechny systémy, které dodáváme.</p>
-                                    <p>Nabízíme vám kompletní profesionální řešení <strong>elektronické požární signalizace (EPS)</strong> pro systémy detekce požáru, detekce úniku plynů, hasicí zařízení, domácí evakuační rozhlas a související doplňkový sortiment. Nabízíme variantní řešení, případně řešení na míru.</p>
-                                    <p><strong>Přístupové a docházkové systémy (ACS),</strong> nabízíme ucelené portfolio produktů špičkových světových výrobců pro komplexní realizaci systémů elektronické kontroly vstupu i docházkových systémů. </p>
-                                    <p><strong>Parkovací systém (PS),</strong> pro řízený příjezd a výjezd vozidel, zařízení pro navigaci uvnitř a vně parkoviště a monitorování obsazenosti parkovacích míst. Mimo základní funkce je možné rozšířit systém o platby ve speciálních režimech např. pro rezidenty a hotelové hosty. </p>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Zavřít
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      </div>
+    </div>
+    <!-- Portfolio item 2 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img src="assets/img/close-icon.svg" alt="Close modal" />
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- Project details-->
+                  <h2 class="text-uppercase">ZABEZPEČOVACÍ A KAMEROVÉ SYSTÉMY</h2>
+                  <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/camera.jpg" alt="..." />
+                  <p>
+                    Naše společnost nabízí dodávku a instalaci
+                    <strong>kamerových systémů (CCTV)</strong> pro ekonomické, středně náročné i vysoce náročné aplikace a také komplexní portfolio
+                    produktů pro systémy na bázi IP technologií
+                  </p>
+                  <p>
+                    <strong>Poplachové systémy (PZTS)</strong> - navrhneme vám a dodáme komplexní řešení elektronického zabezpečení objektů všech
+                    velikostí a kategorií, a to jak pro aplikace pouze s poplachovým systémem, tak i pro instalace, kde jsou vzájemně propojeny a
+                    integrovány všechny systémy, které dodáváme.
+                  </p>
+                  <p>
+                    Nabízíme vám kompletní profesionální řešení
+                    <strong>elektronické požární signalizace (EPS)</strong> pro systémy detekce požáru, detekce úniku plynů, hasicí zařízení, domácí
+                    evakuační rozhlas a související doplňkový sortiment. Nabízíme variantní řešení, případně řešení na míru.
+                  </p>
+                  <p>
+                    <strong>Přístupové a docházkové systémy (ACS),</strong>
+                    nabízíme ucelené portfolio produktů špičkových světových výrobců pro komplexní realizaci systémů elektronické kontroly vstupu i
+                    docházkových systémů.
+                  </p>
+                  <p>
+                    <strong>Parkovací systém (PS),</strong> pro řízený příjezd a výjezd vozidel, zařízení pro navigaci uvnitř a vně parkoviště a
+                    monitorování obsazenosti parkovacích míst. Mimo základní funkce je možné rozšířit systém o platby ve speciálních režimech např.
+                    pro rezidenty a hotelové hosty.
+                  </p>
+                  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                    <i class="fas fa-xmark me-1"></i>
+                    Zavřít
+                  </button>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- Portfolio item 4 modal popup -->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details -->
-                                    <h2 class="text-uppercase">NÁHRADNÍ PLNĚNÍ – ( 25 / 1 ) – CO TO JE, VÝHODY PRO VÁS</h2>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/officer.jpg" alt="..." />
-                                    <p><strong>Náhradní plnění</strong> je náhradní /povinná/ forma plnění povinného podílu v zaměstnávání osob se zdravotním postižením (OZP), které mají zaměstnávat všichni zaměstnavatelé s více než 25 zaměstnanci, ať se jedná o soukromé společnosti či státní instituce.</p>
-                                    <p>Povinnost je dána zákonem o zaměstnanosti č. 435/2004 Sb. a týká se všech firem nad 25 zaměstnanců.</p>
-                                    <p><strong>Proč náhradní plnění od nás, protože to jsou výhody pro Vás</strong></p>
-                                    <ul>
-                                        <li>Ušetříte na zbytečných výdajích ve formě odvodu státu</li>
-                                        <li>Pomůžete optimalizaci Vašich financí.</li>
-                                    </ul>
-                                    <p><strong>Pro výpočet náhradního plnění potřebného pro Vaši společnost nás neváhejte kontaktovat.</strong></p>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Zavřít
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      </div>
+    </div>
+    <!-- Portfolio item 3 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img src="assets/img/close-icon.svg" alt="Close modal" />
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- Project details-->
+                  <h2 class="text-uppercase">PULT CENTRÁLNÍ OCHRANY – PCO, ZÁSAHOVÁ JEDNOTKA</h2>
+                  <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/dispatch.jpg" alt="..." />
+                  <p>
+                    Pult centrální ochrany <strong>(PCO)</strong> je dohledové poplachové přijímací centrum <strong>(DPPC)</strong>, které máme
+                    zajištěno <strong>24 hodinovou službou</strong>, pro monitorování zabezpečovacích a jiných technologických systémů. Při poplachu
+                    <strong>vyšleme zásahové vozidlo</strong> a telefonicky vás informujeme. Následně provedeme další nezbytné kroky
+                    <strong>k zajištění bezpečnosti</strong> vašeho objektu.
+                  </p>
+                  <p>
+                    <strong>Poplachové systémy (PZTS)</strong> - navrhneme vám a dodáme komplexní řešení elektronického zabezpečení objektů všech
+                    velikostí a kategorií, a to jak pro aplikace pouze s poplachovým systémem, tak i pro instalace, kde jsou vzájemně propojeny a
+                    integrovány všechny systémy, které dodáváme.
+                  </p>
+                  <p>
+                    Nabízíme vám kompletní profesionální řešení
+                    <strong>elektronické požární signalizace (EPS)</strong> pro systémy detekce požáru, detekce úniku plynů, hasicí zařízení, domácí
+                    evakuační rozhlas a související doplňkový sortiment. Nabízíme variantní řešení, případně řešení na míru.
+                  </p>
+                  <p>
+                    <strong>Přístupové a docházkové systémy (ACS),</strong>
+                    nabízíme ucelené portfolio produktů špičkových světových výrobců pro komplexní realizaci systémů elektronické kontroly vstupu i
+                    docházkových systémů.
+                  </p>
+                  <p>
+                    <strong>Parkovací systém (PS),</strong> pro řízený příjezd a výjezd vozidel, zařízení pro navigaci uvnitř a vně parkoviště a
+                    monitorování obsazenosti parkovacích míst. Mimo základní funkce je možné rozšířit systém o platby ve speciálních režimech např.
+                    pro rezidenty a hotelové hosty.
+                  </p>
+                  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                    <i class="fas fa-xmark me-1"></i>
+                    Zavřít
+                  </button>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- Portfolio item 5 modal popup
+      </div>
+    </div>
+    <!-- Portfolio item 4 modal popup -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img src="assets/img/close-icon.svg" alt="Close modal" />
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- Project details -->
+                  <h2 class="text-uppercase">NÁHRADNÍ PLNĚNÍ – ( 25 / 1 ) – CO TO JE, VÝHODY PRO VÁS</h2>
+                  <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/officer.jpg" alt="..." />
+                  <p>
+                    <strong>Náhradní plnění</strong> je náhradní /povinná/ forma plnění povinného podílu v zaměstnávání osob se zdravotním postižením
+                    (OZP), které mají zaměstnávat všichni zaměstnavatelé s více než 25 zaměstnanci, ať se jedná o soukromé společnosti či státní
+                    instituce.
+                  </p>
+                  <p>Povinnost je dána zákonem o zaměstnanosti č. 435/2004 Sb. a týká se všech firem nad 25 zaměstnanců.</p>
+                  <p>
+                    <strong>Proč náhradní plnění od nás, protože to jsou výhody pro Vás</strong>
+                  </p>
+                  <ul>
+                    <li>Ušetříte na zbytečných výdajích ve formě odvodu státu</li>
+                    <li>Pomůžete optimalizaci Vašich financí.</li>
+                  </ul>
+                  <p>
+                    <strong>Pro výpočet náhradního plnění potřebného pro Vaši společnost nás neváhejte kontaktovat.</strong>
+                  </p>
+                  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                    <i class="fas fa-xmark me-1"></i>
+                    Zavřít
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio item 5 modal popup
         <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -677,14 +834,9 @@
                 </div>
             </div>
         </div>-->
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
