@@ -61,7 +61,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     $.ajax({
       type: 'post',
-      url: 'mail.php',
+      url: 'contact.php',
       data: formData,
       success: function (results) {
         $('#successMessage').html(results);
