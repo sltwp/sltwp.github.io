@@ -439,41 +439,44 @@
           <h2 class="section-heading text-uppercase">Kontaktujte nás</h2>
           <h3 class="section-subheading text-muted"></h3>
         </div>
-        <form id="contactForm" role="form">
+        <!--
+          <form id="contactForm" role="form">
           <div class="row align-items-stretch mb-5">
             <div class="col-md-6 mb-5">
               <div class="form-group">
-                <!-- Name input-->
-                <input class="form-control" id="name" type="text" name="visitor_name" placeholder="Vaše jméno *" required/>
+                <!-- Name input
+                <input class="form-control" id="name" type="text" name="visitor_name" placeholder="Vaše jméno *" data-valid="false" required/>
                 <div class="invalid-feedback" data-sb-feedback="name:required">Prosím, zadejte jméno.</div>
               </div>
               <div class="form-group">
-                <!-- Email address input-->
-                <input class="form-control" id="email" type="email" name="visitor_email" placeholder="Váš Email *" required/>
+                <!-- Email address input
+                <input class="form-control" id="email" type="email" name="visitor_email" placeholder="Váš Email *" data-valid="false" required/>
                 <div class="invalid-feedback">Prosím, zadejte email.</div>
                 <div class="invalid-feedback">Prosím, zadejte email.</div>
               </div>
               <div class="form-group">
-                <!-- Phone number input-->
-                <input class="form-control" id="phone" type="tel" name="visitor_phone" placeholder="Vaše tel. číslo *" required/>
+                <!-- Phone number input
+                <input class="form-control" id="phone" type="tel" name="visitor_phone" placeholder="Vaše tel. číslo *" data-valid="false" required/>
                 <div class="invalid-feedback">Prosím, zadejte tel. číslo.</div>
               </div>
               <div class="form-group form-group-textarea mb-md-0">
-                <!-- Message input-->
-                <textarea class="form-control" id="message" name="visitor_message" placeholder="Vaše zpráva *" required></textarea>
+                <!-- Message input
+                <textarea class="form-control" id="message" name="visitor_message" placeholder="Vaše zpráva *" data-valid="false" required></textarea>
                 <div class="invalid-feedback">Prosím, napíšte zprávu.</div>
               </div>
               <div id="successMessage" class="text-center text-success mb-3"></div>
               <div class="d-none" id="submitErrorMessage">
                 <div class="text-center text-danger mb-3">Zprávu se nepovedlo odeslat</div>
               </div>
-              <!-- Submit Button class="btn btn-primary btn-xl text-uppercase disabled g-recaptcha"-->
               <div>
-                <button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="button">Odeslat zprávu</button>
+                <button class="btn btn-primary btn-xl text-uppercase g-recaptcha" data-sitekey="6LdI8R0lAAAAAJaD0P00iLUY-VaEJ2YY6VEwsVSm" data-callback="onSubmit" id="submitButton" type="button">Odeslat zprávu</button>
               </div>
             </div>
             <div class="col-md-6 justify-text">
-              <div class="address-form">
+                        </div>
+        </form>-->
+        <div class="row align-items-stretch">
+              <div class="address-form col-md-6">
                 <address>
                   <h2 class="branded-text underline">Sídlo společnosti</h2>
                   <div style="margin-bottom: 3rem">
@@ -488,32 +491,26 @@
                   </div>
                 </address>
               </div>
+                  <div class="col-md-6 address-form" style="text-align: center; text-align: -webkit-center;">
+                    <h2 class="branded-text underline">Vedení společnosti</h2>
+                  <div class="col-md-6 mb-5 address-form">
+                    <div class="mb-5">
+                      <p>Ředitel společnosti</p>
+                      <p><a href="mailto:reditel@3ssecurity.cz">reditel@3ssecurity.cz</a></p>
+                    </div>
+                    <div class="mb-5">
+                      <p>Obchodní oddělení</p>
+                      <p><a href="tel:+420731926535">+420 731 926 535</a></p>
+                      <p><a href="mailto:obchod@3ssecurity.cz">obchod@3ssecurity.cz</a></p>
+                    </div>
+                    <div>
+                      <p>Provozní oddělení</p>
+                      <p><a href="mailto:provoz@3ssecurity.cz">provoz@3ssecurity.cz</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </form>
-        <div class="row align-items-stretch">
-          <div class="col-md-12">
-            <h2 class="branded-text underline" style="margin-bottom: 2rem; text-align: center;">Vedení společnosti</h2>
-          </div>
-          <div class="col-md-6 mb-5 address-form">
-            <div class="mb-5">
-              <p>Ředitel společnosti</p>
-              <p><a href="mailto:reditel@3ssecurity.cz">reditel@3ssecurity.cz</a></p>
-            </div>
-          </div>
-          <div class="col-md-6 mb-5 address-form">
-            <div class="mb-5">
-              <p>Obchodní oddělení</p>
-              <p><a href="tel:+420731926535">+420 731 926 535</a></p>
-              <p><a href="mailto:obchod@3ssecurity.cz">obchod@3ssecurity.cz</a></p>
-            </div>
-            <div>
-              <p>Provozní oddělení</p>
-              <p><a href="mailto:provoz@3ssecurity.cz">provoz@3ssecurity.cz</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
     <!-- Footer-->
     <footer class="footer py-4">

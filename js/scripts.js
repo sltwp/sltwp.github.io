@@ -46,7 +46,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     var name = $('input#name').val(),
       email = $('input#email').val(),
-      phone = $('input#phone').val(),
+      phone = $('input#phone').val().toString(),
       message = $('textarea#message').val(),
       
       formData =

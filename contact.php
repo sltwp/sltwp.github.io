@@ -6,13 +6,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail_to = "simonsotak97@gmail.com";
     
     # Sender Data
-    $subject = trim($_POST["subject"]);
+    $subject = "Nová zpráva z kontaktního formuláře 3ssecurity.cz";
     $name = str_replace(array("\r","\n"),array(" "," ") , strip_tags(trim($_POST["name"])));
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-    $phone - trim($_POST["phone"]);
+    $phone = trim($_POST["phone"]);
     $message = trim($_POST["message"]);
     
-    if ( empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($phone) OR empty($message)) {
+    if ( empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($phone) OR empty($subject) OR empty($message)) {
         # Set a 400 (bad request) response code and exit.
         http_response_code(400);
         echo "Please complete the form and try again.";
@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers .= 'MIME-Version: 1.0' ."\r\n";
     $headers .= 'Content-Type: text/HTML; charset=utf-8' . "\r\n";
     $headers .= 'Content-Transfer-Encoding: 8bit'. "\n\r\n";
-    $headers .= $text . "\r\n";
+    # $headers .= $text . "\r\n";
 
 
     # Send the email.
