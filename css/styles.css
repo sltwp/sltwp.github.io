@@ -12327,11 +12327,13 @@ section#contact form#contactForm :-ms-input-placeholder {
   margin-top: 100px;
 }
 
-.iso-cert {
-  transition:transform 0.25s ease;
-}
+@media (min-width: 1400px) {
+  .iso-cert {
+    transition: transform 0.25s ease;
+  }
 
-.iso-cert:hover {
-  -webkit-transform:scale(1.75);
-  transform:scale(1.75);
+  .iso-cert:hover {
+    -webkit-transform: scale(1.6);
+    transform: scale(1.6);
+  }
 }
